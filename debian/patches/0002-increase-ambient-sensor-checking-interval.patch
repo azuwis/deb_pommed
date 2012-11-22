@@ -1,0 +1,21 @@
+From: "Zhong Jianxin (azuwis)" <azuwis@gmail.com>
+Date: Thu, 22 Nov 2012 10:36:23 +0800
+Subject: increase ambient sensor checking interval
+
+---
+ pommed/kbd_backlight.h |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pommed/kbd_backlight.h b/pommed/kbd_backlight.h
+index 0b40091..fe381e6 100644
+--- a/pommed/kbd_backlight.h
++++ b/pommed/kbd_backlight.h
+@@ -22,7 +22,7 @@
+ #define KBD_USER     0
+ #define KBD_AUTO     1
+ 
+-#define KBD_TIMEOUT 200
++#define KBD_TIMEOUT 2000000
+ 
+ 
+ struct _kbd_bck_info
