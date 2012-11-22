@@ -1,3 +1,15 @@
+pommed (1.39~dfsg-3~1.gbpc369b3) UNRELEASED; urgency=low
+
+  ** SNAPSHOT build @c369b3478cdc75ea6a5d8c202284be3b7b835335 **
+
+  [ Zhong Jianxin (azuwis) ]
+  * New patch 0002-increase-ambient-sensor-checking-interval.patch.
+    Thanks to "Zhong Jianxin (azuwis)"
+
+  [ azuwis ]
+
+ -- Zhong Jianxin (azuwis) <azuwis@gmail.com>  Thu, 22 Nov 2012 10:43:48 +0800
+
 pommed (1.39~dfsg-2) unstable; urgency=low
 
   * debian/patches/build_flags.patch:
