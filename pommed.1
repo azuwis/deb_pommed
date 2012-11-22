@@ -1,0 +1,55 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH POMMED 1 "2007-01-09"
+
+.SH NAME
+pommed \- Apple laptops hotkeys event handler
+
+.SH SYNOPSIS
+.B pommed
+.RI [ options ]
+.SH DESCRIPTION
+This manual page documents briefly the
+.B pommed
+daemon.
+.PP
+.B pommed
+is a daemon handling the hotkeys found on the Apple laptops, like the
+MacBook Pro, MacBook and PowerBook laptops. These hotkeys control,
+through
+.BR pommed ,
+the LCD backlight level, the audio volume, the keyboard backlight
+level (only on the MacBook Pro and the latest PowerBook) and the
+CD/DVD drive ejection. Additionally,
+.B pommed
+monitors the ambient light sensors found on the MacBook Pro and the
+latest PowerBook to automatically light up the keyboard backlight when
+the ambient light level gets too low.
+.PP
+.B pommed
+can optionally support the Apple Remote Control, too (this option is
+disabled by default and only available for the MacBook Pro and
+MacBook).
+
+.SH OPTIONS
+.B pommed
+accepts the following command-line options.
+.TP
+.B \-v
+Print version information.
+.TP
+.B \-f
+Run in the foreground, printing log messages to stdout.
+.TP
+.B \-d
+Run in the foreground, printing log messages to stdout and debug
+messages to stderr.
+
+.SH FILES
+.TP
+.B /etc/pommed.conf
+The configuration file for \fBpommed\fP. See the comments in the
+file for the structure of the file and the available options.
+
+.SH AUTHOR
+.B pommed
+was written by Julien BLACHE <jb@jblache.org>.
